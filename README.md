@@ -11,7 +11,7 @@ This is a plugin for Adobe's Lightroom Classic which allows you to edit photos i
 
 You will need Lightroom Classic and Blackmagic Fusion. If you're interested in a Lightroom plugin you will probably already have Lightroom installed. You can download a free version of Fusion 9 or the latest Fusion 16 Studio (non free) from Blackmagic's website.
 
-![Add the Plugin in the plugin manager][./docs/01-add-plugin.png]
+[[docs/01-add-plugin.png]]
 ![Navigate to the folder.][./docs/02-navigate-and-select.png]
 ![Configure the path to Fusion.exe][./docs/03-select-fusion-exe.png]
 ![Edit the photo in Fusion.][./docs/04-edit.png]
