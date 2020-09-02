@@ -39,7 +39,7 @@ local function sectionsForTopOfDialog(f, properties)
                             canChooseFiles = true,
                             canChooseDirectories = false,
                             allowsMultipleSelection = false,
-                            fileTypes = { "exe" }, 
+                            fileTypes = { "exe", "app" },
                         }
 
                         if result ~= nil then

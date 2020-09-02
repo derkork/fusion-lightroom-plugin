@@ -22,7 +22,6 @@ You will need Lightroom Classic and Blackmagic Fusion. If you're interested in a
 
 ## Limitations
 
-* I've only tested this on Windows. It may work on Macs, but I didn't try it.
 * Speaking of testing, this has received very little testing. So there are almost certainly bugs in it.
 * Currently you can only have one composition per input photo.
 * The exported TIFF files are not automatically deleted after you finish editing in Fusion, so you have to delete them manually.

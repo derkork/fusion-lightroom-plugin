@@ -217,14 +217,18 @@ function makeCompFile(width, height, inputName, outputName, compName)
         }
         ]]
 
+    local canonicalInputName = inputName:gsub('\\', '\\\\')
+    local canonicalOutputName = outputName:gsub('\\', '\\\\')
+
     compTemplate = compTemplate:gsub("###PHOTO_WIDTH###", width)
     compTemplate = compTemplate:gsub("###PHOTO_HEIGHT###", height)
-    compTemplate = compTemplate:gsub("###INPUT_FILE###", inputName:gsub('\\', '\\\\'))
-    compTemplate = compTemplate:gsub("###OUTPUT_FILE###", outputName:gsub('\\', '\\\\'))
+    compTemplate = compTemplate:gsub("###INPUT_FILE###", canonicalInputName )
+    compTemplate = compTemplate:gsub("###OUTPUT_FILE###", canonicalOutputName)
 
     local compFile = io.open(compName, "w")
     compFile:write(compTemplate)
     compFile:close()
+
 end
 
 local targetPhoto = catalog.targetPhoto
